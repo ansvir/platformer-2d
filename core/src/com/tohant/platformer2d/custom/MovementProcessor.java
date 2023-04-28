@@ -46,7 +46,7 @@ public class MovementProcessor {
             jumpMovement.processJump(delta);
             deltaY += jumpMovement.getGravitationDelta();
         } else {
-            deltaY -= environment.getSpeed();
+            deltaY -= environment.getGravitationSpeed();
             System.out.println("deltaY = " + deltaY + ", environment.getSpeed() = " + environment.getSpeed());
             System.out.println(heroActor.getCollisionZone().getY());
         }

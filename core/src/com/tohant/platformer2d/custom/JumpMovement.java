@@ -21,7 +21,7 @@ public class JumpMovement {
         }
         if (isUp) {
             gravitationDelta += upSpeed * delta;
-            upSpeed -= 0.5;
+            upSpeed -= 0.7;
         }
     }
 
